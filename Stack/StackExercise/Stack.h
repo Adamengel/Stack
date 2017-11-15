@@ -4,19 +4,15 @@
 
 namespace StackExercise
 {
-	const int STACK_SIZE = 10;
-
-	template<typename T>
+	template<typename T,  int STACK_SIZE = 10>
 	class Stack
 	{
 	public:
 
-		//template<typename T>
 		Stack()
 			: m_nextIndex(0)
 		{}
 
-		//template<typename T>
 		void Push(T val)
 		{
 			if (m_nextIndex < STACK_SIZE)
